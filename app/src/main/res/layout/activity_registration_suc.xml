@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inzenjer.forthepeople.Registration_suc">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/regsuc_very"
+    android:textSize="25dp"
+    android:layout_margin="15dp"
+    android:layout_gravity="center"
+    android:text="Welcome "
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="25dp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:text="You can login after verification "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/regsuc_id"
+        android:textSize="25dp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:text="ID = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/regsuc_username"
+            android:textSize="25dp"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:text="username = "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/regsuc_pass"
+        android:textSize="25dp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:text="Password = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inzenjer.forthepeople.Home">
+    <GridLayout
+        android:layout_centerInParent="true"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_margin="30dp"
+            android:layout_column="0"
+            android:layout_row="0">
+
+            <TextView
+                android:id="@+id/complaintlist_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complaint list" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="30dp"
+            android:layout_column="0"
+            android:layout_row="1">
+            <TextView
+                android:text="Suggetion list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="30dp"
+            android:layout_column="1"
+            android:layout_row="0">
+            <TextView
+                android:text="Suggetion list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="30dp"
+            android:layout_column="1"
+            android:layout_row="1">
+            <TextView
+                android:text="Suggetion list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </GridLayout>
+
+</RelativeLayout>

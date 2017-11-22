@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inzenjer.forthepeople.Register">
+    <ScrollView
+        android:id="@+id/idscrolll"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout2">
+    <EditText
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:id="@+id/reg_username"
+        android:hint="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:hint="Email"
+        android:id="@+id/reg_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:hint="Mobile"
+        android:id="@+id/reg_mobile"
+        android:inputType="phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:id="@+id/reg_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_gravity="center"
+        android:id="@+id/category_selector_spin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.AppCompatSpinner>
+<EditText
+    android:visibility="gone"
+    android:id="@+id/id_reg"
+    android:layout_gravity="center"
+    android:hint="  id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/constituency_reg"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="constituency" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/port_reg"
+        android:layout_gravity="center"
+        android:hint="portfolio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="reg"
+        android:layout_gravity="center"
+        android:id="@+id/regok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register" />
+</LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
