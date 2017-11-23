@@ -16,6 +16,7 @@ import com.inzenjer.forthepeople.adapters.Constants;
 import com.inzenjer.forthepeople.adapters.RecyclerTouchListener;
 import com.inzenjer.forthepeople.adapters.complaintAdapter;
 import com.inzenjer.forthepeople.models.complaints;
+import com.inzenjer.forthepeople.models.static_cmpaint;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -49,6 +50,9 @@ public class ComplaintList extends AppCompatActivity {
             @Override
             public void onClick(View view, int position) {
                 complaints ml = complaint_list.get(position);
+                static_cmpaint.discription= ml.getComplaint_des();
+                static_cmpaint.name= ml.getName();
+                static_cmpaint.name= ml.getName();
             }
 
             @Override
@@ -115,6 +119,8 @@ Log.e("hjfcg",sh);
                 String log_id = data1.getString("log_id");
                 String file = data1.getString("file");
                 String status = data1.getString("Status");
+                String email = data1.getString("email");
+                String extra = data1.getString("extra");
 
                 complaints ml = new complaints(title,log_id,status,"",complaint_des);
 
