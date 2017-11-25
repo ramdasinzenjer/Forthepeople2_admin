@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class Home extends AppCompatActivity {
-TextView complaintListHome ;
+TextView complaintListHome,Suggetions ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,5 +20,15 @@ TextView complaintListHome ;
                 startActivity(i);
             }
         });
+
+        Suggetions=findViewById(R.id.sugget);
+        Suggetions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(Home.this,Suggetion.class);
+                startActivity(i);
+            }
+        });
+
     }
 }

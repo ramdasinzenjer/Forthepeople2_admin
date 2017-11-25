@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inzenjer.forthepeople.complaintElabratedList"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Spinner
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/details_details"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></Spinner>
+
+    <TextView
+        android:id="@+id/complaint_Tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Complaint_Tittle"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/details_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/linearLayout4"
+        android:layout_below="@+id/complaint_Tittle"
+        android:layout_marginTop="31dp"
+        android:gravity="center"
+        android:text="Complaint_Tittle"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="@+id/complaint_Tittle" />
+
+
+    <Button
+        android:id="@+id/update_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="13dp"
+        android:text="Update Status"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearLayout4"
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+            android:id="@+id/file2txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dvgdvdvb" />
+
+        <Button
+            android:id="@+id/file2download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/details_details">
+
+        <TextView
+            android:id="@+id/file1txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dvgdvdvb" />
+
+        <Button
+            android:id="@+id/file1download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="download" />
+    </LinearLayout>
+</RelativeLayout>

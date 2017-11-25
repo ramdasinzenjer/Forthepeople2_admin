@@ -1,5 +1,6 @@
 package com.inzenjer.forthepeople;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -50,9 +51,12 @@ public class ComplaintList extends AppCompatActivity {
             @Override
             public void onClick(View view, int position) {
                 complaints ml = complaint_list.get(position);
-                static_cmpaint.discription= ml.getComplaint_des();
-                static_cmpaint.name= ml.getName();
-                static_cmpaint.name= ml.getName();
+                static_cmpaint.discription = ml.getComplaint_des();
+                static_cmpaint.name = ml.getName();
+                static_cmpaint.id = ml.getComplaintid();
+                static_cmpaint.file=ml.getFile();
+                Intent i = new Intent(ComplaintList.this,complaintElabratedList.class);
+                startActivity(i);
             }
 
             @Override
@@ -67,23 +71,21 @@ public class ComplaintList extends AppCompatActivity {
         String urlParameters = "";
 
 
-
         @Override
         protected String doInBackground(String... strings) {
-            try{
+            try {
                 SharedPreferences share = getSharedPreferences("userdata", MODE_PRIVATE);
                 share.getString("username", "");
                 share.getString("password", "");
-               String id =  share.getString("userid","");
-                urlParameters =  "id=" + URLEncoder.encode(id, "UTF-8");
-            }catch (Exception e)
-            {
+                String id = share.getString("userid", "");
+                urlParameters = "id=" + URLEncoder.encode(id, "UTF-8");
+            } catch (Exception e) {
 
             }
 
             sh = Connectivity.excutePost(Constants.complaints,
                     urlParameters);
-Log.e("hjfcg",sh);
+            Log.e("hjfcg", sh);
 
             return sh;
 
@@ -122,8 +124,7 @@ Log.e("hjfcg",sh);
                 String email = data1.getString("email");
                 String extra = data1.getString("extra");
 
-                complaints ml = new complaints(title,log_id,status,"",complaint_des);
-
+                complaints ml = new complaints(title, log_id, status, "", complaint_des,file);
 
 
                 complaint_list.add(ml);
@@ -132,7 +133,6 @@ Log.e("hjfcg",sh);
 
         } catch (Exception e) {
             e.printStackTrace();
-            Log.e("mException", "qqqqqq" + e);
         }
     }
 

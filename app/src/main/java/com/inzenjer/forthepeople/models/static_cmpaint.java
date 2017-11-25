@@ -11,4 +11,5 @@ public class static_cmpaint {
     public  static  String person;
     public  static  String file;
     public  static  String status;
+    public static String id;
 }

@@ -84,7 +84,7 @@ public class Login extends AppCompatActivity {
                         JSONObject mnn = mn.getJSONObject(0);
                         String st = mnn.getString("name");
                         Toast.makeText(Login.this, st, Toast.LENGTH_SHORT).show();
-                        Intent i = new Intent(Login.this,Home.class);
+                        Intent i = new Intent(Login.this, Home.class);
                         startActivity(i);
                     }
                 } catch (JSONException e) {

@@ -5,7 +5,7 @@ package com.inzenjer.forthepeople.models;
  */
 
 public class complaints {
-    String name, complaintid, status, from, complaint_des;
+    String name, complaintid, status, from, complaint_des,file;
 
     public String getName() {
         return name;
@@ -47,12 +47,20 @@ public class complaints {
         this.complaint_des = complaint_des;
     }
 
-    public complaints(String name, String complaintid, String status, String from, String complaint_des) {
+    public String getFile() {
+        return file;
+    }
 
+    public void setFile(String file) {
+        this.file = file;
+    }
+
+    public complaints(String name, String complaintid, String status, String from, String complaint_des, String file) {
         this.name = name;
         this.complaintid = complaintid;
         this.status = status;
         this.from = from;
         this.complaint_des = complaint_des;
+        this.file = file;
     }
 }

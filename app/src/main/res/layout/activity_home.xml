@@ -25,6 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="74dp">
             <TextView
+                android:id="@+id/sugget"
                 android:gravity="center"
                 android:textSize="25dp"
                 android:text="Suggetions"

@@ -8,7 +8,7 @@ public interface Constants {
     String REGISTER_MESSAGE="Register in...";
 
 
-   //String BASE_URL="http://192.168.1.21/mla/";
+   String BASE_URL2="http://192.168.1.13/mla/";
    String BASE_URL="http://192.168.1.13/mla/admin/";
 
     String LOGIN_URL=BASE_URL+"login.php?";
@@ -37,4 +37,7 @@ public interface Constants {
 
 
     String complaints = BASE_URL+"/complaintlist.php";
+    String change_status = BASE_URL+"status_update.php";
+    String download = BASE_URL2+"uploads/";
+    String suggetion = BASE_URL+"suggetion_list";
 }
