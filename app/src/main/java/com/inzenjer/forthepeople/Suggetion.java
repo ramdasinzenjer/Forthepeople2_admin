@@ -109,8 +109,8 @@ public class Suggetion extends AppCompatActivity {
                 final String[] id = {data1.getString("id")};
                 String name = data1.getString("name");
                 String title = data1.getString("title");
-                String suggetion_des = data1.getString("suggetion_des");
-                String log_id = data1.getString("log_id");
+                String suggetion_des = data1.getString("complaint_des");
+                String log_id = data1.getString("Log_id");
                 String status = data1.getString("Status");
 
                 suggetions ml = new suggetions(title,log_id,status,name,suggetion_des);

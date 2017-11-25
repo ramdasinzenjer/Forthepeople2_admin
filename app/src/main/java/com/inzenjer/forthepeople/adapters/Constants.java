@@ -39,5 +39,5 @@ public interface Constants {
     String complaints = BASE_URL+"/complaintlist.php";
     String change_status = BASE_URL+"status_update.php";
     String download = BASE_URL2+"uploads/";
-    String suggetion = BASE_URL+"suggetion_list";
+    String suggetion = BASE_URL+"feedback_list.php";
 }
