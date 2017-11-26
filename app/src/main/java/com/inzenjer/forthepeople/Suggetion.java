@@ -37,6 +37,7 @@ public class Suggetion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_suggest_list);
         suggetionView = (RecyclerView) findViewById(R.id.suggetion_recyclerView);
 
         mAdapter = new suggetionAdapter(suggetion_list);
@@ -113,7 +114,7 @@ public class Suggetion extends AppCompatActivity {
                 String log_id = data1.getString("Log_id");
                 String status = data1.getString("Status");
 
-                suggetions ml = new suggetions(title,log_id,status,name,suggetion_des);
+                suggetions ml = new suggetions(title, log_id, status, name, suggetion_des);
 
                 suggetion_list.add(ml);
 
